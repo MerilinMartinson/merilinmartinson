@@ -65,10 +65,10 @@ const Contact = () => {
           <div className="relative hidden md:block">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-secondary via-accent/30 to-secondary p-12 flex items-center justify-center">
               <div className="text-center space-y-4">
-                <p className="font-serif text-2xl italic text-foreground/80">
-                  "The only way to do great work is to love what you do."
+              <p className="font-serif text-xl italic text-foreground/80 leading-relaxed">
+                  "Show not what has been done, but what can be. How beautiful the world would be if there were a procedure for moving through labyrinths."
                 </p>
-                <p className="text-sm text-muted-foreground">— A reminder</p>
+                <p className="text-sm text-muted-foreground mt-4">— Umberto Eco, The Name of the Rose</p>
               </div>
             </div>
             {/* Decorative elements */}
