@@ -1,4 +1,4 @@
-import { Mail, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
 
             <div className="space-y-6">
               <a
-                href="mailto:yourname@university.edu"
+                href="mailto:merilin.martinson@hu-berlin.de"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -26,20 +26,22 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium group-hover:text-primary transition-colors">
-                    yourname@university.edu
+                    merilin.martinson@hu-berlin.de
                   </p>
                   <p className="text-sm text-muted-foreground">Email</p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <p className="font-medium">Department of Economics</p>
+                  <p className="font-medium">Humboldt-Universität zu Berlin</p>
                   <p className="text-sm text-muted-foreground">
-                    University Name, City, State
+                    Raum 141, Department of Economics<br />
+                    Spandauer Straße 1<br />
+                    10178 Berlin
                   </p>
                 </div>
               </div>
@@ -47,20 +49,15 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
-              {[
-                { icon: Twitter, href: "#", label: "Twitter" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Github, href: "#", label: "GitHub" },
-              ].map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/in/merilin-martinson/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
             </div>
           </div>
 
