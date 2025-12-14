@@ -62,6 +62,15 @@ const About = () => {
     { year: "2014", title: "Medal for Academic Excellence", org: "Government of Estonia" },
   ];
 
+  const volunteering = [
+    { role: "Research Mentor", org: "Lumiere Education", period: "2025–present" },
+    { role: "Mentor", org: "Women in Economics initiative", period: "2022–present" },
+    { role: "University Representative", org: "HTW Berlin", period: "2018–2021" },
+    { role: "Chef & Community Organiser", org: "Homeless veggie dinners initiative", period: "2018–2020" },
+    { role: "Ballet & English Teacher", org: "More Than English, Colombia", period: "2016–2018" },
+    { role: "Primary School Teacher", org: "Colegio Divino Niño, Colombia", period: "2016–2017" },
+  ];
+
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
       <div className="max-w-6xl mx-auto px-6">
@@ -164,9 +173,28 @@ const About = () => {
                     </div>
                   </div>
                 ))}
+            </div>
+
+            {/* Volunteering */}
+            <div className="pt-8 border-t border-border">
+              <h3 className="font-serif text-lg font-medium mb-6">Volunteering & Service</h3>
+              <div className="space-y-4">
+                {volunteering.map((vol, index) => (
+                  <div key={index} className="flex items-start gap-4 group">
+                    <div className="w-2 h-2 rounded-full bg-primary/60 mt-2 group-hover:scale-150 transition-transform flex-shrink-0" />
+                    <div className="flex-1">
+                      <div className="flex flex-wrap items-baseline justify-between gap-2">
+                        <p className="font-medium text-sm">{vol.role}</p>
+                        <span className="text-xs text-muted-foreground">{vol.period}</span>
+                      </div>
+                      <p className="text-muted-foreground text-xs">{vol.org}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
