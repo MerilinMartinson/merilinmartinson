@@ -1,8 +1,6 @@
 import { Mail, MapPin, Linkedin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
+  return <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
@@ -17,10 +15,7 @@ const Contact = () => {
             </p>
 
             <div className="space-y-6">
-              <a
-                href="mailto:merilin.martinson@hu-berlin.de"
-                className="flex items-center gap-4 group"
-              >
+              <a href="mailto:merilin.martinson@hu-berlin.de" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <Mail size={20} />
                 </div>
@@ -49,13 +44,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
-              <a
-                href="https://www.linkedin.com/in/merilin-martinson/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
+              <a href="https://www.linkedin.com/in/merilin-martinson/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -68,7 +57,7 @@ const Contact = () => {
               <p className="font-serif text-xl italic text-foreground/80 leading-relaxed">
                   "Show not what has been done, but what can be. How beautiful the world would be if there were a procedure for moving through labyrinths."
                 </p>
-                <p className="text-sm text-muted-foreground mt-4">— Umberto Eco, The Name of the Rose</p>
+                <p className="text-sm text-muted-foreground mt-4">— Umberto Eco in The Name of the Rose</p>
               </div>
             </div>
             {/* Decorative elements */}
@@ -77,8 +66,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

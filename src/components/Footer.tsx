@@ -1,12 +1,10 @@
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="py-12 bg-foreground text-background">
+  return <footer className="py-12 bg-foreground text-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <span className="font-serif text-lg">Your Name</span>
+            <span className="font-serif text-lg">Merilin Martinson</span>
             <span className="w-2 h-2 rounded-full bg-primary" />
           </div>
           
@@ -23,8 +21,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
