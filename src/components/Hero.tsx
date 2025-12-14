@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Hero = () => {
   return (
@@ -13,19 +14,17 @@ const Hero = () => {
           <div className="space-y-8 opacity-0 animate-fade-up">
             <div className="space-y-2">
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
-                Economics PhD Candidate
+                PhD Candidate in Economics
               </p>
               <h1 className="text-5xl md:text-7xl font-serif font-medium leading-[1.1] tracking-tight">
-                Your<br />
-                <span className="text-gradient">Name</span><br />
-                Here
+                Merilin<br />
+                <span className="text-gradient">Martinson</span>
               </h1>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Research interests in development economics, 
-              labor markets, and applied microeconomics. 
-              Currently at <span className="text-foreground font-medium">University Name</span>.
+              Research on labour market integration of marginalised groups. 
+              Currently at <span className="text-foreground font-medium">Humboldt University Berlin</span>.
             </p>
 
             <div className="flex items-center gap-6">
@@ -44,17 +43,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="relative opacity-0 animate-fade-up stagger-2">
             <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-secondary via-accent/50 to-secondary overflow-hidden shadow-card">
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <div className="w-24 h-24 mx-auto rounded-full bg-muted flex items-center justify-center">
-                    <span className="font-serif text-3xl text-muted-foreground">YN</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">Your photo here</p>
-                </div>
-              </div>
+              <img 
+                src={profilePhoto} 
+                alt="Merilin Martinson" 
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             {/* Decorative frame */}
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10" />

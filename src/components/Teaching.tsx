@@ -1,36 +1,30 @@
 const Teaching = () => {
-  const courses = [
+  const experiences = [
     {
-      role: "Teaching Assistant",
-      courses: [
+      role: "Lecturer",
+      items: [
         {
-          name: "Principles of Microeconomics",
-          code: "ECON 101",
-          term: "Fall 2023, Spring 2024",
-          instructor: "Prof. John Smith",
+          name: "Business Mathematics",
+          institution: "HTW Berlin",
+          period: "2018–2020",
+          description: "First-year compulsory course (~90 students). Covered matrix algebra, solving linear systems, differential calculus, and basic optimisation.",
         },
         {
-          name: "Intermediate Microeconomics",
-          code: "ECON 301",
-          term: "Fall 2022, Fall 2023",
-          instructor: "Prof. Jane Doe",
-        },
-        {
-          name: "Econometrics I",
-          code: "ECON 410",
-          term: "Spring 2023",
-          instructor: "Prof. Maria Garcia",
+          name: "Research Methods and Scientific Writing",
+          institution: "HTW Berlin",
+          period: "2018–2020",
+          description: "First-year compulsory course (~90 students). Research design, data collection, academic writing, and presentations.",
         },
       ],
     },
     {
-      role: "Instructor",
-      courses: [
+      role: "Primary & Kindergarten Teacher",
+      items: [
         {
-          name: "Introduction to R for Economists",
-          code: "Workshop",
-          term: "Summer 2023",
-          instructor: "Graduate Student Workshop Series",
+          name: "English and Mathematics",
+          institution: "Colombia",
+          period: "2016–2018",
+          description: "Taught English and Mathematics with a focus on interactive, student-centred learning.",
         },
       ],
     },
@@ -46,64 +40,44 @@ const Teaching = () => {
               Teaching<span className="accent-dot" />
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              I am passionate about teaching and have had the opportunity to 
-              work with students at various levels.
+              I have taught at both university and primary levels, 
+              with experience in mathematics, research methods, and language education.
             </p>
           </div>
 
           {/* Content */}
           <div className="md:col-span-8 space-y-12">
-            {courses.map((section, sectionIndex) => (
+            {experiences.map((section, sectionIndex) => (
               <div key={sectionIndex}>
                 <h3 className="font-serif text-xl font-medium mb-6 flex items-center gap-3">
                   <span className="w-8 h-0.5 bg-primary" />
                   {section.role}
                 </h3>
                 <div className="space-y-4">
-                  {section.courses.map((course, courseIndex) => (
+                  {section.items.map((item, itemIndex) => (
                     <div
-                      key={courseIndex}
+                      key={itemIndex}
                       className="p-6 rounded-xl bg-card border border-border/50 card-hover"
                     >
                       <div className="flex flex-wrap items-start justify-between gap-4 mb-2">
                         <div>
-                          <h4 className="font-medium text-lg">{course.name}</h4>
+                          <h4 className="font-medium text-lg">{item.name}</h4>
                           <p className="text-sm text-muted-foreground">
-                            {course.code}
+                            {item.institution}
                           </p>
                         </div>
                         <span className="text-sm text-primary font-medium">
-                          {course.term}
+                          {item.period}
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground">
-                        {course.instructor}
+                      <p className="text-sm text-muted-foreground mt-3">
+                        {item.description}
                       </p>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-
-            {/* Teaching Statement */}
-            <div className="p-8 rounded-2xl bg-secondary/50 border border-border/50">
-              <h3 className="font-serif text-lg font-medium mb-4">
-                Teaching Philosophy
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                I believe in creating an inclusive and engaging learning environment 
-                where students feel comfortable asking questions and exploring 
-                economic concepts through real-world applications. My teaching 
-                emphasizes critical thinking and the practical application of 
-                economic theory.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:underline"
-              >
-                Download Teaching Statement
-              </a>
-            </div>
           </div>
         </div>
       </div>

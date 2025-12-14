@@ -14,22 +14,13 @@ const About = () => {
           <div className="md:col-span-8 space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-foreground/90">
-                I am a PhD candidate in Economics at <span className="font-medium">University Name</span>, 
-                where I study the intersection of development economics and labor markets.
+                I am a PhD candidate in Economics at <span className="font-medium">Humboldt University Berlin</span>. 
+                My research focuses on the labour market integration of marginalised groups.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                My research focuses on understanding how policy interventions affect 
-                economic outcomes in developing countries. I use a combination of 
-                experimental and quasi-experimental methods to answer questions about 
-                education, employment, and economic mobility.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed">
-                Prior to my PhD, I received my BA in Economics from 
-                <span className="text-foreground font-medium"> Undergraduate University</span> 
-                {" "}and worked as a research assistant at 
-                <span className="text-foreground font-medium"> Research Institution</span>.
+                Before starting my PhD, I graduated from University College London with a distinction 
+                in MRes Economics and worked at the European Central Bank.
               </p>
             </div>
 
@@ -38,11 +29,10 @@ const About = () => {
               <h3 className="font-serif text-lg font-medium mb-4">Research Interests</h3>
               <div className="flex flex-wrap gap-3">
                 {[
-                  "Development Economics",
-                  "Labor Economics",
+                  "Labour Economics",
+                  "Migration",
                   "Applied Microeconomics",
                   "Policy Evaluation",
-                  "Gender Economics",
                 ].map((interest) => (
                   <span
                     key={interest}
@@ -61,18 +51,13 @@ const About = () => {
                 {[
                   {
                     degree: "PhD in Economics",
-                    school: "University Name",
-                    year: "Expected 2026",
+                    school: "Humboldt University Berlin",
+                    year: "In Progress",
                   },
                   {
-                    degree: "MA in Economics",
-                    school: "University Name",
-                    year: "2022",
-                  },
-                  {
-                    degree: "BA in Economics",
-                    school: "Undergraduate University",
-                    year: "2020",
+                    degree: "MRes Economics (Distinction)",
+                    school: "University College London",
+                    year: "2021",
                   },
                 ].map((edu, index) => (
                   <div key={index} className="flex items-start gap-4 group">
