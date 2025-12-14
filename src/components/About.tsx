@@ -3,57 +3,69 @@ const About = () => {
     {
       degree: "PhD in Economics",
       school: "Humboldt-Universität zu Berlin",
-      year: "2025–",
+      year: "2025-",
     },
     {
       degree: "MRes Economics",
       school: "University College London",
-      year: "2024–2025",
+      year: "2024-2025",
     },
     {
       degree: "MSc Economics & Management Science (Grade: 1.0)",
       school: "Humboldt-Universität zu Berlin",
-      year: "2021–2024",
+      year: "2021-2024",
       note: "Best graduate of the School of Business and Economics",
     },
     {
       degree: "BA International Business (Grade: 1.26)",
       school: "HTW Berlin",
-      year: "2018–2021",
+      year: "2018-2021",
       note: "Best overall graduate",
     },
   ];
 
   const experience = [
+     {
+      role: "Research Fellow",
+      institution: "DFG Research Unit “Labour Market Transformation: Scarcity, Mismatch & Policy”",
+      period: "2025-present",
+    },
     {
-      role: "Research Assistant",
-      details: "to Joshua Angrist (MIT), Alexandra Spitz-Oener & Sulin Sardoschau",
+      role: "Research Assistant to Joshua Angrist (MIT)",
+      institution: "Humboldt-Universität zu Berlin, Rockwool Foundation Berlin",
+      period: "2023-2024, 2025-present",
+    },
+     {
+      role: "Research Assistant to Sulin Sardoschau",
       institution: "Humboldt-Universität zu Berlin",
-      period: "2023–2024",
+      period: "2024",
     },
     {
       role: "Research Trainee",
-      details: "RA to Carlo Altavilla, Monetary Policy DG",
-      institution: "European Central Bank",
-      period: "2023–2024",
+      details: "RA to Carlo Altavilla",
+      institution: "European Central Bank, DG Monetary Policy, Monetary Analysis Division",
+      period: "2023-2024",
     },
     {
       role: "Data Analyst",
       details: "",
       institution: "Ladenzeile GmbH",
-      period: "2018–2022",
+      period: "2018-2022",
     },
     {
       role: "Data Scientist",
       details: "",
       institution: "Messa App S.A.S., Colombia",
-      period: "2020–2021",
+      period: "2020-2021",
     },
   ];
 
   const awards = [
+    { year: "2025", title: "Antti Piippo Foundation Scholarship", org: "Estonia" },
+    { year: "2025", title: "Eesti Pank Research Award", org: "Estonia" },
     { year: "2025", title: "Rein Otsason Foundation Scholarship", org: "Estonia" },
-    { year: "2024", title: "Special Prize in Social Sciences", org: "Estonian Research Council" },
+    { year: "2024", title: "Special Prize for Research in Social Sciences", org: "Estonian Research Council" },
+    { year: "2024", title: "Humboldt Research Track Scholarship", org: "Humboldt-Universität zu Berlin" },
     { year: "2024", title: "Henrike und Dr. Thomas Kurze-Preis", org: "Humboldt-Universität zu Berlin" },
     { year: "2024", title: "Deutschlandstipendium", org: "Ferdinand und Charlotte Schimmelpfennig-Stiftung" },
     { year: "2023", title: "Deutschlandstipendium", org: "Deutsche Bank" },
@@ -62,14 +74,14 @@ const About = () => {
     { year: "2014", title: "Medal for Academic Excellence", org: "Government of Estonia" },
   ];
 
-  const volunteering = [
-    { role: "Research Mentor", org: "Lumiere Education", period: "2025–present" },
-    { role: "Mentor", org: "Women in Economics initiative", period: "2022–present" },
-    { role: "University Representative", org: "HTW Berlin", period: "2018–2021" },
-    { role: "Chef & Community Organiser", org: "Homeless veggie dinners initiative", period: "2018–2020" },
-    { role: "Ballet & English Teacher", org: "More Than English, Colombia", period: "2016–2018" },
-    { role: "Primary School Teacher", org: "Colegio Divino Niño, Colombia", period: "2016–2017" },
-  ];
+  // const volunteering = [
+  //   { role: "Research Mentor", org: "Lumiere Education", period: "2025-present" },
+  //   { role: "Mentor", org: "Women in Economics initiative", period: "2022-present" },
+  //   { role: "University Representative", org: "HTW Berlin", period: "2018-2021" },
+  //   { role: "Chef & Community Organiser", org: "Homeless veggie dinners initiative", period: "2018-2020" },
+  //   { role: "Ballet & English Teacher", org: "More Than English, Colombia", period: "2016-2018" },
+  //   { role: "Primary School Teacher", org: "Colegio Divino Niño, Colombia", period: "2016-2017" },
+  // ];
 
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
@@ -175,7 +187,7 @@ const About = () => {
                 ))}
             </div>
 
-            {/* Volunteering */}
+            {/* Volunteering
             <div className="pt-8 border-t border-border">
               <h3 className="font-serif text-lg font-medium mb-6">Volunteering & Service</h3>
               <div className="space-y-4">
@@ -192,7 +204,7 @@ const About = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         </div>

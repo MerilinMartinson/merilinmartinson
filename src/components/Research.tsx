@@ -3,40 +3,38 @@ import { ExternalLink, FileText } from "lucide-react";
 const Research = () => {
   const papers = [
     {
-      title: "The Effects of Cash Transfers on Educational Outcomes: Evidence from a Randomized Experiment",
-      status: "Job Market Paper",
+      title: "Gig Economy and Refugee Labour Market Integration: Evidence from a Food Delivery Platform's Rollout in Colombia",
+      status: "Working paper",
       abstract:
-        "This paper examines the impact of unconditional cash transfers on educational attainment and labor market outcomes using a randomized controlled trial in...",
+        "Colombia has absorbed a large inflow of Venezuelan refugees while app-mediated delivery work has expanded rapidly across cities. This paper asks whether local platform entry changes refugees' employment trajectories in a high-informality labour market. I exploit the staggered municipal rollout of a food delivery platform Rappi between 2013 and 2023 and estimate dynamic intent-to-treat effects using the doubly robust Callaway and Sant'Anna (2021) estimator with not-yet-treated comparisons. The analysis focuses on men and contrasts Venezuelan immigrants with a targeted native counterfactual that matches the platform-worker profile. First-stage relevance is clear: platform entry coincides with a visible, if noisy, rise in a courier-work proxy, especially among immigrants. Reduced-form effects on employment, hours, earnings and informality are small or imprecise in the full sample. Among pre-period residents, point estimates suggest a decline in refugee informality while employment and hours move little. Confidence intervals rule out large, sustained effects on work or pay. Taken together, the evidence points to limited average changes in labour-market outcomes and, at best, tentative formalisation among settled refugees. Platform expansion alone is unlikely to transform integration; if platforms primarily ease short-run liquidity, complementary policies (credential recognition, search support, portable insurance, basic protections) are needed to shift longer-run outcomes.",
       links: [
-        { label: "PDF", href: "#" },
-        { label: "Slides", href: "#" },
+        // { label: "PDF", href: "#" },
+        // { label: "Slides", href: "#" },
       ],
     },
-    {
-      title: "Gender Gaps in STEM Fields: A Cross-Country Analysis",
-      status: "Under Review",
-      coauthors: "with Jane Doe",
-      abstract:
-        "We document persistent gender gaps in STEM education and employment across 50 countries and explore the role of cultural factors and policy interventions...",
-      links: [
-        { label: "PDF", href: "#" },
-        { label: "Online Appendix", href: "#" },
-      ],
-    },
-    {
-      title: "Minimum Wage Effects on Small Business Employment",
-      status: "Working Paper",
-      coauthors: "with John Smith and Maria Garcia",
-      abstract:
-        "Using administrative data from payroll records, we estimate the employment effects of minimum wage increases on small businesses...",
-      links: [{ label: "Draft available upon request", href: "#" }],
-    },
+    // {
+    //   title: "Gender Gaps in STEM Fields: A Cross-Country Analysis",
+    //   status: "Under Review",
+    //   coauthors: "with Jane Doe",
+    //   abstract:
+    //     "We document persistent gender gaps in STEM education and employment across 50 countries and explore the role of cultural factors and policy interventions...",
+    //   links: [
+    //     { label: "PDF", href: "#" },
+    //     { label: "Online Appendix", href: "#" },
+    //   ],
+    // },
+    // {
+    //   title: "Minimum Wage Effects on Small Business Employment",
+    //   status: "Working Paper",
+    //   coauthors: "with John Smith and Maria Garcia",
+    //   abstract:
+    //     "Using administrative data from payroll records, we estimate the employment effects of minimum wage increases on small businesses...",
+    //   links: [{ label: "Draft available upon request", href: "#" }],
+    // },
   ];
 
   const worksInProgress = [
-    "The Long-Run Effects of Early Childhood Interventions on Economic Mobility",
-    "Remote Work and Urban-Rural Migration Patterns",
-    "Financial Literacy Programs and Household Savings Behavior",
+    "Effects of low-skilled gig work on the long-term unemployed"
   ];
 
   return (
@@ -60,11 +58,11 @@ const Research = () => {
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold uppercase tracking-wider">
                   {paper.status}
                 </span>
-                {paper.coauthors && (
+                {/* {paper.coauthors && (
                   <span className="text-sm text-muted-foreground italic">
                     {paper.coauthors}
                   </span>
-                )}
+                )} */}
               </div>
 
               <h3 className="font-serif text-xl md:text-2xl font-medium mb-4 group-hover:text-primary transition-colors">
