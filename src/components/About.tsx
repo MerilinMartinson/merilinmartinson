@@ -14,6 +14,7 @@ const About = () => {
       degree: "MSc Economics & Management Science (Grade: 1.0)",
       school: "Humboldt-Universität zu Berlin",
       year: "2021–2024",
+      note: "Best graduate of the School of Business and Economics",
     },
     {
       degree: "BA International Business (Grade: 1.26)",
@@ -48,6 +49,17 @@ const About = () => {
       institution: "Messa App S.A.S., Colombia",
       period: "2020–2021",
     },
+  ];
+
+  const awards = [
+    { year: "2025", title: "Rein Otsason Foundation Scholarship", org: "Estonia" },
+    { year: "2024", title: "Special Prize in Social Sciences", org: "Estonian Research Council" },
+    { year: "2024", title: "Henrike und Dr. Thomas Kurze-Preis", org: "Humboldt-Universität zu Berlin" },
+    { year: "2024", title: "Deutschlandstipendium", org: "Ferdinand und Charlotte Schimmelpfennig-Stiftung" },
+    { year: "2023", title: "Deutschlandstipendium", org: "Deutsche Bank" },
+    { year: "2021", title: "Best Graduate of the Programme", org: "HTW Berlin" },
+    { year: "2020", title: "PROMOS Scholarship", org: "DAAD" },
+    { year: "2014", title: "Medal for Academic Excellence", org: "Government of Estonia" },
   ];
 
   return (
@@ -133,6 +145,22 @@ const About = () => {
                         {exp.institution}
                         {exp.details && <span className="text-foreground/70"> · {exp.details}</span>}
                       </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Awards */}
+            <div className="pt-8 border-t border-border">
+              <h3 className="font-serif text-lg font-medium mb-6">Awards & Scholarships</h3>
+              <div className="space-y-3">
+                {awards.map((award, index) => (
+                  <div key={index} className="flex items-start gap-4 group">
+                    <span className="text-sm text-muted-foreground w-12 flex-shrink-0">{award.year}</span>
+                    <div className="flex-1">
+                      <p className="font-medium text-sm">{award.title}</p>
+                      <p className="text-muted-foreground text-xs">{award.org}</p>
                     </div>
                   </div>
                 ))}
