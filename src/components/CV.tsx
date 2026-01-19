@@ -1,4 +1,11 @@
 import { Download } from "lucide-react";
+import { generateCV } from "@/lib/generateCV";
+
+// ...
+<button onClick={generateCV} className="...">
+  <Download size={20} />
+  Download CV (PDF)
+</button>
 
 const CV = () => {
   return (
