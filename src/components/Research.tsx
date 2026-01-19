@@ -6,7 +6,7 @@ const Research = () => {
       title: "Gig Economy and Refugee Labour Market Integration: Evidence from a Food Delivery Platform's Rollout in Colombia",
       status: "Working paper",
       abstract:
-        "Colombia has absorbed a large inflow of Venezuelan refugees while app-mediated delivery work has expanded rapidly across cities. This paper asks whether local platform entry changes refugees' employment trajectories in a high-informality labour market. I exploit the staggered municipal rollout of a food delivery platform Rappi between 2013 and 2023 and estimate dynamic intent-to-treat effects using the doubly robust Callaway and Sant'Anna (2021) estimator with not-yet-treated comparisons. The analysis focuses on men and contrasts Venezuelan immigrants with a targeted native counterfactual that matches the platform-worker profile. First-stage relevance is clear: platform entry coincides with a visible, if noisy, rise in a courier-work proxy, especially among immigrants. Reduced-form effects on employment, hours, earnings and informality are small or imprecise in the full sample. Among pre-period residents, point estimates suggest a decline in refugee informality while employment and hours move little. Confidence intervals rule out large, sustained effects on work or pay. Taken together, the evidence points to limited average changes in labour-market outcomes and, at best, tentative formalisation among settled refugees. Platform expansion alone is unlikely to transform integration; if platforms primarily ease short-run liquidity, complementary policies (credential recognition, search support, portable insurance, basic protections) are needed to shift longer-run outcomes.",
+        "Colombia has absorbed a large inflow of Venezuelan refugees while app-mediated delivery work has expanded rapidly across cities. This paper asks whether local platform entry changes refugees' employment trajectories in a highly informal upper-middle-income economy. I exploit the staggered municipal rollout of a food delivery platform Rappi between 2013 and 2023 and estimate dynamic intent-to-treat effects using the doubly robust Callaway and Sant'Anna (2021) estimator with not-yet-treated comparisons. The analysis focuses on men and contrasts Venezuelan immigrants with a targeted native counterfactual that matches the platform-worker profile. First-stage relevance is clear: platform entry coincides with a clear rise in a the probability of working as a food delivery driver. The effect is concentrated among immigrants. Reduced-form effects on employment, hours, earnings and informality are small or imprecise in the full sample. Confidence intervals rule out large, sustained effects on informal work or pay. Refugees who had established themselves in a municipality prior to Rappi rollout experience a decline in informality while employment and hours move little. Most vulnerable refugee groups--young, low-skilled, and recent arrivals--experience a persistent increase in their informal employment rates.",
       links: [
         // { label: "PDF", href: "#" },
         // { label: "Slides", href: "#" },
@@ -34,7 +34,9 @@ const Research = () => {
   ];
 
   const worksInProgress = [
-    "Effects of low-skilled gig work on the long-term unemployed"
+    "Effects of low-skilled gig work on the long-term unemployed",
+    "Migration networks and drug consumption",
+    "Evaluating monotonicity violations in Judge IV designs"
   ];
 
   return (

@@ -6,13 +6,13 @@ const Teaching = () => {
         {
           name: "Business Mathematics",
           institution: "HTW Berlin",
-          period: "2018–2020",
+          period: "2018--2020",
           description: "First-year compulsory course (~90 students). Covered matrix algebra, solving linear systems, differential calculus, and basic optimisation.",
         },
         {
           name: "Research Methods and Scientific Writing",
           institution: "HTW Berlin",
-          period: "2018–2020",
+          period: "2018--2020",
           description: "First-year compulsory course (~90 students). Research design, data collection, academic writing, and presentations.",
         },
       ],
@@ -23,7 +23,7 @@ const Teaching = () => {
         {
           name: "English and Mathematics",
           institution: "Colombia",
-          period: "2016–2018",
+          period: "2016--2018",
           description: "Taught English and Mathematics with a focus on interactive, student-centred learning.",
         },
       ],

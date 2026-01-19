@@ -11,7 +11,8 @@ const Contact = () => {
             
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm always happy to discuss research ideas, potential collaborations, 
-              or just chat about economics. Feel free to reach out!
+              or just chat about economics. 
+              Feel free to reach out!
             </p>
 
             <div className="space-y-6">

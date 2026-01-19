@@ -3,12 +3,14 @@ const About = () => {
     {
       degree: "PhD in Economics",
       school: "Humboldt-Universität zu Berlin",
-      year: "2025-",
+      year: "2025--",
+
     },
     {
       degree: "MRes Economics",
       school: "University College London",
       year: "2024-2025",
+      note: "Distinction",
     },
     {
       degree: "MSc Economics & Management Science (Grade: 1.0)",
@@ -26,53 +28,53 @@ const About = () => {
 
   const experience = [
      {
-      role: "Research Fellow",
-      institution: "DFG Research Unit “Labour Market Transformation: Scarcity, Mismatch & Policy”",
+      role: "Research Fellow (DFG)",
+      // institution: "DFG Research Unit “Labour Market Transformation: Scarcity, Mismatch & Policy”",
       period: "2025-present",
     },
     {
       role: "Research Assistant to Joshua Angrist (MIT)",
-      institution: "Humboldt-Universität zu Berlin, Rockwool Foundation Berlin",
+      // institution: "Humboldt-Universität zu Berlin, Rockwool Foundation Berlin",
       period: "2023-2024, 2025-present",
     },
      {
-      role: "Research Assistant to Sulin Sardoschau",
-      institution: "Humboldt-Universität zu Berlin",
+      role: "Research Assistant to Sulin Sardoschau (Humboldt-Universität zu Berlin)",
+      // institution: "Humboldt-Universität zu Berlin",
       period: "2024",
     },
     {
-      role: "Research Trainee",
-      details: "RA to Carlo Altavilla",
-      institution: "European Central Bank, DG Monetary Policy, Monetary Analysis Division",
+      role: "Research Trainee (European Central Bank, DG Monetary Policy)",
+      // details: "RA to Carlo Altavilla",
+      // institution: "European Central Bank, DG Monetary Policy, Monetary Analysis Division",
       period: "2023-2024",
     },
     {
-      role: "Data Analyst",
+      role: "Data Analyst (Ladenzeile GmbH, Germany)",
       details: "",
       institution: "Ladenzeile GmbH",
       period: "2018-2022",
     },
     {
-      role: "Data Scientist",
-      details: "",
-      institution: "Messa App S.A.S., Colombia",
+      role: "Data Scientist (Messa App S.A.S., Colombia)",
+      // details: "",
+      // institution: "Messa App S.A.S., Colombia",
       period: "2020-2021",
     },
   ];
 
-  const awards = [
-    { year: "2025", title: "Antti Piippo Foundation Scholarship", org: "Estonia" },
-    { year: "2025", title: "Eesti Pank Research Award", org: "Estonia" },
-    { year: "2025", title: "Rein Otsason Foundation Scholarship", org: "Estonia" },
-    { year: "2024", title: "Special Prize for Research in Social Sciences", org: "Estonian Research Council" },
-    { year: "2024", title: "Humboldt Research Track Scholarship", org: "Humboldt-Universität zu Berlin" },
-    { year: "2024", title: "Henrike und Dr. Thomas Kurze-Preis", org: "Humboldt-Universität zu Berlin" },
-    { year: "2024", title: "Deutschlandstipendium", org: "Ferdinand und Charlotte Schimmelpfennig-Stiftung" },
-    { year: "2023", title: "Deutschlandstipendium", org: "Deutsche Bank" },
-    { year: "2021", title: "Best Graduate of the Programme", org: "HTW Berlin" },
-    { year: "2020", title: "PROMOS Scholarship", org: "DAAD" },
-    { year: "2014", title: "Medal for Academic Excellence", org: "Government of Estonia" },
-  ];
+  // const awards = [
+  //   { year: "2025", title: "Antti Piippo Foundation Scholarship", org: "Estonia" },
+  //   { year: "2025", title: "Eesti Pank Research Award", org: "Estonia" },
+  //   { year: "2025", title: "Rein Otsason Foundation Scholarship", org: "Estonia" },
+  //   { year: "2024", title: "Special Prize for Research in Social Sciences", org: "Estonian Research Council" },
+  //   { year: "2024", title: "Humboldt Research Track Scholarship", org: "Humboldt-Universität zu Berlin" },
+  //   { year: "2024", title: "Henrike und Dr. Thomas Kurze-Preis", org: "Humboldt-Universität zu Berlin" },
+  //   { year: "2024", title: "Deutschlandstipendium", org: "Ferdinand und Charlotte Schimmelpfennig-Stiftung" },
+  //   { year: "2023", title: "Deutschlandstipendium", org: "Deutsche Bank" },
+  //   { year: "2021", title: "Best Graduate of the Programme", org: "HTW Berlin" },
+  //   { year: "2020", title: "PROMOS Scholarship", org: "DAAD" },
+  //   { year: "2014", title: "Medal for Academic Excellence", org: "Government of Estonia" },
+  // ];
 
   // const volunteering = [
   //   { role: "Research Mentor", org: "Lumiere Education", period: "2025-present" },
@@ -94,17 +96,15 @@ const About = () => {
             </h2>
           </div>
 
-          {/* Content */}
-          <div className="md:col-span-8 space-y-8">
+            {/* Content */}
+            <div className="md:col-span-8 space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl leading-relaxed text-foreground/90">
-                I am a PhD candidate in Economics at <span className="font-medium">Humboldt University Berlin</span>. 
-                My research focuses on the labour market integration of marginalised groups.
+              I am a PhD candidate in Economics at <span className="font-medium">Humboldt University Berlin</span> and a research fellow in the DFG Research Unit on Labour Market Transformations. My research examines the labour market effects of the platform economy, high-skilled migration shocks, and the relationship between migration networks and crime. I am particularly focused on developing and applying econometric methods to address causal inference challenges in these domains.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                Before starting my PhD, I graduated from University College London with a distinction 
-                in MRes Economics and worked at the European Central Bank.
+                Before beginning my PhD, I graduated from University College London and worked at the European Central Bank.
               </p>
             </div>
 
@@ -115,8 +115,8 @@ const About = () => {
                 {[
                   "Labour Economics",
                   "Migration",
-                  "Applied Microeconomics",
-                  "Policy Evaluation",
+                  "Econometrics",
+                  "Crime",
                 ].map((interest) => (
                   <span
                     key={interest}
@@ -173,7 +173,7 @@ const About = () => {
             </div>
 
             {/* Awards */}
-            <div className="pt-8 border-t border-border">
+            {/* <div className="pt-8 border-t border-border">
               <h3 className="font-serif text-lg font-medium mb-6">Awards & Scholarships</h3>
               <div className="space-y-3">
                 {awards.map((award, index) => (
@@ -185,7 +185,7 @@ const About = () => {
                     </div>
                   </div>
                 ))}
-            </div>
+            </div> */}
 
             {/* Volunteering
             <div className="pt-8 border-t border-border">
@@ -205,8 +205,7 @@ const About = () => {
                 ))}
               </div>
             </div> */}
-          </div>
-        </div>
+                  </div>
         </div>
       </div>
     </section>
