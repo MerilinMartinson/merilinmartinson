@@ -34,9 +34,9 @@ const Research = () => {
   ];
 
   const worksInProgress = [
-    "Effects of low-skilled gig work on the long-term unemployed",
-    "Migration networks and drug consumption",
-    "Evaluating monotonicity violations in Judge IV designs"
+    "Effects of low-skilled gig work on the long-term unemployed"
+    // "Migration networks and drug consumption",
+    // "Evaluating monotonicity violations in Judge IV designs"
   ];
 
   return (
