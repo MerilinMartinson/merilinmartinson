@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-// import profilePhoto from "@/assets/profile-photo.jpeg";
+import profilePhoto from "@/assets/standing_cropped.jpg";
 
 const Hero = () => {
   return (
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Image */}
-          {/* <div className="relative opacity-0 animate-fade-up stagger-2">
+          <div className="relative opacity-0 animate-fade-up stagger-2">
             <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-secondary via-accent/50 to-secondary overflow-hidden shadow-card">
               <img 
                 src={profilePhoto} 
@@ -52,9 +52,8 @@ const Hero = () => {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            {/* Decorative frame */}
-            {/* <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10" />
-          </div> */}
+            <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10" />
+          </div>
         </div>
 
         {/* Scroll indicator */}
