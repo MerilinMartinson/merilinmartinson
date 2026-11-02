@@ -40,7 +40,7 @@ const Teaching = () => {
               Teaching<span className="accent-dot" />
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              I have taught at both university and primary levels, 
+              I have taught at both university and primary school levels, 
               with experience in mathematics, research methods, and language education.
             </p>
           </div>

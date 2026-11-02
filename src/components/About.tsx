@@ -37,11 +37,11 @@ const About = () => {
       // institution: "Humboldt-Universität zu Berlin, Rockwool Foundation Berlin",
       period: "2023-2024, 2025-present",
     },
-     {
-      role: "Research Assistant to Sulin Sardoschau (Humboldt-Universität zu Berlin)",
-      // institution: "Humboldt-Universität zu Berlin",
-      period: "2024",
-    },
+    //  {
+    //   role: "Research Assistant to Sulin Sardoschau (Humboldt-Universität zu Berlin)",
+    //   // institution: "Humboldt-Universität zu Berlin",
+    //   period: "2024",
+    // },
     {
       role: "Research Trainee (European Central Bank, DG Monetary Policy)",
       // details: "RA to Carlo Altavilla",

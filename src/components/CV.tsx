@@ -17,8 +17,7 @@ const CV = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-            A complete overview of my academic journey, research experience, 
-            and professional activities.
+            Here's my full CV.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
