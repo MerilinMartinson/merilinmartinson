@@ -52,7 +52,7 @@ const Hero = () => {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10" />
+            <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 pointer-events-none" />
           </div>
         </div>
 
